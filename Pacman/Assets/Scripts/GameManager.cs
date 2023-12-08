@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set;}
+ 
     private int score;
     public int lives;
     private int ghostMultiplier = 1;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip EatPowerPelletSoundEffect;
     public AudioSource AudioSource;
 
+    public static GameManager Instance { get; private set; }
     private void Awake()
     {
         // Singleton Design Pattern: 
